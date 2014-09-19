@@ -232,13 +232,15 @@ HardwareSkills:
 
 NonTechnicalSkills:
   - area: "Mentoring and teaching"
-  - area: "Conflict resolution"
   - area: "Analytical writing"
+  - area: "Interpersonal effectiveness"
   - area: "Public affairs and business foundation"
-  - area: "Diversity of experiences through farming and ranching childhood"
-  - area: "Resourcesful and hands-on building/construction"
+  - area: "Conflict resolution"
+  - area: "Diversity of perspective through rural/farming youth"
   - area: "Political campaigning and public policy"
+  # - area: "Resourcesful, creative and hands-on building/construction"
   - area: "Research and self-learning"
+  - area: "Strategic and first-principles problem solving"
 
 
 

@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width">
 
   <title>Kale J. Franz, PhD</title>
+  <!--
+    ## About this page ##
+      * Hosted using github pages at https://github.com/kalefranz/kalefranz.github.io  (source in stable branch)
+      * Basic Twitter Bootstrap framework with custom theming
+      * Templated using javascript's swig library; data kept in yaml format
+      * Custom gulp-swig plugin to compile and then deploy
+  -->
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
