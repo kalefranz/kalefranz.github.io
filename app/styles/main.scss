@@ -1,0 +1,176 @@
+@import "bootstrap/bootstrap/variables";
+
+
+$white:                       #FFF !default;
+$black:                       #000 !default;
+$bluejeans-dark:              #4A89DC !default;
+$bluejeans-light:             #5D9CEC !default;
+$mint-xdark:                  #32AE8F !default;
+$mint-dark:                   #37BC9B !default;
+$mint-light:                  #48CFAD !default;
+$sunflower-dark:              #F6BB42 !default;
+$sunflower-light:             #FFCE54 !default;
+$grapefruit-dark:             #DA4453 !default;
+$grapefruit-light:            #ED5565 !default;
+$lightgray-dark:              #E6E9ED !default;
+$lightgray-light:             #F5F7FA !default;
+$mediumgray-dark:             #AAB2BD !default;
+$mediumgray-light:            #CCD1D9 !default;
+$darkgray-dark:               #434A54 !default;
+$darkgray-light:              #656D78 !default;
+
+$bluejeans-xlight:            #91bbf2 !default;
+$passion:                     #cc2839 !default;
+
+body {
+    background: $white;
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: $black;
+    min-width: 480px;
+    margin-bottom: 2.5em;
+}
+
+.l1-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.l1-group > li {
+    margin-bottom: 1em;
+}
+
+.l2-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1em;
+}
+.l2-group > li {
+    margin-bottom: 0.6em;
+}
+.l2-group .decorated {
+    color: $bluejeans-dark;
+    font-size: 0.9em;    
+}
+
+.icon {
+  color: $white;
+  font-size: 1.2em;
+}
+
+
+h2 {
+    color: $bluejeans-dark;
+    border-bottom: 2px solid $sunflower-dark;
+}
+.institution {
+    margin: 0;    
+    font-size: 1.3em;
+    line-height: 1.1em;
+    display: block;
+    font-weight: 500;
+}
+.title {
+    color: $bluejeans-dark;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.subdetails {
+    padding: 0;
+    margin-left: 1.25em;
+}
+
+.header {
+    background-color: $bluejeans-xlight;
+    margin-top: 20px;
+    padding: 0 20px 0.75em;
+}
+.header #masthead {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 3.5em;
+    line-height: 1.25em; 
+    letter-spacing: 0.04em;
+    text-align: right;
+    margin: 0;
+    float: right;
+}
+#social-table {
+    margin-top: 0.625em;
+    margin-bottom: 0;
+    width: 21.25em;
+}
+#social-table td {
+    border: 0;
+    padding: 0.25em;
+}
+
+.header a {
+    text-decoration: none;
+    color: $black;
+}
+
+.year {
+    color: $bluejeans-dark;
+    margin-left: 0.15em;
+    float: right;
+}
+.location {
+    float: right;
+}
+
+
+.profile-panel {
+    margin-top: 1.25em;
+    font-family: "Crimson Text", seif;    
+    font-size: 1.3em;
+    line-height: 1.25em;
+    padding: 1em;
+    color: $passion;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+
+@media screen and (max-width: $screen-xs-min) {
+  @viewport {
+    zoom: 0.5;
+  }
+  .container {
+    width: 464px;
+  }
+  .header {
+    margin-top: 0;
+  }
+  .header #masthead {
+    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .container {
+    width: 530px;
+  }
+}
+@media screen and (max-width: $screen-sm-max) {
+  body {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 3.1em;
+    line-height: 1.4em;
+    padding-bottom: 0.15em;
+  }
+}
+
+@media print {
+  @page {
+    size: 330mm 427mm;
+    margin: 14mm;
+  }
+  .container {
+    width: 1170px;
+  }
+}
