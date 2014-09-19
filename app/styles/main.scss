@@ -112,6 +112,13 @@ h2 {
     color: $black;
 }
 
+.header ::selection {
+    background: $lightgray-light;
+}
+.header ::-moz-selection {
+    background: $lightgray-light; 
+}
+
 .year {
     color: $bluejeans-dark;
     margin-left: 0.15em;
