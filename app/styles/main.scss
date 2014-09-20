@@ -19,6 +19,7 @@ $mediumgray-light:            #CCD1D9 !default;
 $darkgray-dark:               #434A54 !default;
 $darkgray-light:              #656D78 !default;
 
+$almost-black:                #333 !default;
 $bluejeans-xlight:            #91bbf2 !default;
 $passion:                     #cc2839 !default;
 
@@ -29,6 +30,10 @@ body {
     color: $black;
     min-width: 480px;
     margin-bottom: 2.5em;
+}
+
+section {
+  color: $almost-black;
 }
 
 .l1-group {
@@ -85,6 +90,7 @@ h2 {
     background-color: $bluejeans-xlight;
     margin-top: 20px;
     padding: 0 20px 0.75em;
+    color: $black;
 }
 .header #masthead {
     font-family: "Crimson Text", serif;
