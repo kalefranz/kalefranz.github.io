@@ -1,6 +1,6 @@
 ---
 
-ImpactStatement: "Passionate about conquering hard problems for a better future. Leveraging full hardware, software, and non-technical skill sets in a knowledge-accelerating world."
+ImpactStatement: "Passionate about conquering hard problems for a better future. Leveraging hardware, software, and non-technical skill sets in a knowledge-accelerating world."
 
 Education:
   - institution: Princeton University
@@ -40,14 +40,14 @@ Experience:
     location: "El Segundo, CA"
     details:
       - "Implemented numerically-efficient versions of several published algorithms for analyzing DNA microarray and Next Generation Sequencing data."
-      - "Architected and initiated development on a highly secure and flexible license management system."
+      - "Architected and initiated development on a secure and flexible license management system."
       - "Introduced and implemented modern software development practices, including a code and architecture documentation strategy, a transition from Subversion to Git version control, and a peer code review process."
   - institution: "Grindr LLC & Blendr LLC"
     year: "2012–2013"
     title: Core Software Engineer
     location: "Hollywood, CA"
     details:
-      - "Developed proprietary location algorithm at the heart of the company’s location-based technology offering.  The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic.  The new algorithm resulted in a savings to the company of $1.4 million per year."
+      - "Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year."
       - "Architected scaling and redundancy strategies for multiple proprietary technologies."
       - "Authored 78% of server-side code for completely revamped technology platform."
   - institution: Jet Propulsion Laboratory
@@ -55,17 +55,17 @@ Experience:
     title: Microdevices Engineer
     location: "Pasadena, CA"
     details:
-      - 'Principal Investigator for JPL award for "Low power consumption lasers".'
-      - "Developed ErwinJr software package for quantum cascade laser simulation; NTR #48342 accepted; released publicly as open source. Written in a combination of Python and C++ languages."
+      - 'Principal Investigator for JPL award "Low power consumption lasers".'
+      - "Developed ErwinJr software package for quantum cascade laser simulation; NTR #48342; released publicly as open source. Written in a combination of Python and C++."
       - "Demonstrated first near-room temperature continuous wave quantum cascade laser fabricated within NASA for AEMC (Advanced Environmental Monitoring and Control) project."
-      - "Designed, fabricated, and tested of 4.x µm quantum cascade lasers for CO detection."
-      - "Demonstrated high power (>100 mW) room temperature continuous wave 2.05 µm single spatial mode lasers for CO2 lidar."
-      - "Demonstrated world's first high power (>70 mW) room temperature continuous wave 2.05 µm distributed feedback lasers for NASA ASCENDS (Active Sensing of CO2 Emissions over Nights, Days, and Seasons) deliverable."
+      - "Designed, fabricated, and tested 4.x µm quantum cascade lasers for CO detection."
+      - "Demonstrated high power (>100 mW) room temperature continuous wave 2.05 µm single spatial mode lasers for CO₂ lidar."
+      - "Demonstrated world's first high power (>70 mW) room temperature continuous wave 2.05 µm distributed feedback lasers for NASA ASCENDS (Active Sensing of CO₂ Emissions over Nights, Days, and Seasons) deliverable."
       - "Developed advanced packaging techniques and procedures for high reliability laser operation."
       - "Mentored multiple graduate student interns."
   - institution: Princeton University
     year: "2009–2010"
-    title: Post-doc Research Engineer
+    title: Postdoc Research Engineer
     location: "Princeton, NJ"
     details:
       - "Developed traditional heterodyne detection systems for trace gas sensing."
@@ -89,20 +89,20 @@ Experience:
     title: Research Assistant
     location: "Princeton, NJ"
     details:
-      - "Researched infrared quantum cascade semiconductor lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures."
+      - "Researched and developed infrared lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures."
       - 'Invented new mechanism for achieving lasing in quantum cascade lasers through "high k-space lasing"; U.S.Patent Application 11744508.'
       - 'Invented "short injector" quantum cascade lasers that led to lowered threshold current and deeper understanding of QC laser physics.'
       - "Invented ultra-strong coupling quantum cascade laser designs that led to world record 50% wall-plug efficiencies; U.S. Patent Application 12795954."
       - "Demonstrated world’s first intersubband emission from II-VI quantum cascade structures."
       - "Experience includes"
     subdetails:
-      - "Molecular beam epitaxy of III-V and II-VI materials, including quantum cascade lasers"
+      - "Molecular beam epitaxy of III-V and II-VI materials and devices, including quantum cascade lasers"
       - "III-V and II-VI compound semiconductor micro- and nanofabrication tools and techniques"
       - "Optoelectronics production packaging"
       - "C++, MATLAB, and finite element programming and optimization for operational analysis"
       - "Commercial and self-coded software for electromagnetic, optical, and thermal modeling and simulation"
       - "Mid-infrared optoelectronic device characterization and analysis for sensing and communication systems"
-      - "Spectroscopic analysis techniques, including Fourier transform infrared (FTIR) spectroscopy"
+      - "Spectroscopic analysis techniques"
   - institution: "AdTech Optics, Inc."
     year: "2007"
     title: Technical Consultant
@@ -134,7 +134,7 @@ Experience:
     title: Intern
     location: "Washington, D.C."
     details:
-      - "Traveled to ten National Labs assisting University of Washington Center for Workforce Development in internship program review and evaluation, examining program value and customer (intern) satisfaction."
+      - "Traveled to DOE National Labs assisting University of Washington Center for Workforce Development in internship program review and evaluation, examining program value and customer (intern) satisfaction."
       - "Advised on strategic direction for individual programs and department mission."
       - "Editor and contributing author for first and second volumes of DOE Office of Science Journal of Undergraduate Research."
       - "Worked directly under an Office of Science director in policy-related matters, including program management and Congressional budget proposals."
@@ -170,6 +170,10 @@ Activities:
     year: "2007–2009"
   - activity: "Princeton University Graduate Engineering Ambassadors"
     year: "2005–2009"
+  - activity: "National Science Bowl and National Middle School Science Bowl Moderator"
+    year: "2003–2008"
+  - activity: "National Science Bowl and National Middle School Science Bowl Question Author"
+    year: "2005–2008"
   - activity: "Princeton University Graduate Engineering Council"
     year: "2006–2007"
   - activity: "Princeton University Electrical Engineering Graduate Student Council"
@@ -180,16 +184,12 @@ Activities:
     year: "2002–2004"
   - activity: "Colorado School of Mines College Republicans Chairman"
     year: "2002–2004"
-  - activity: "Colorado School of Mines Student Body (ASCSM) Secretary"
-    year: "2002–2003"
   - activity: "Colorado School of Mines McBride Honors Program"
     year: "2000–2004"
   - activity: "Colorado School of Mines Tau Beta Pi Treasurer"
     year: "2003–2004"
-  - activity: "National Science Bowl and National Middle School Science Bowl Moderator"
-    year: "2003–2008"
-  - activity: "National Science Bowl and National Middle School Science Bowl Question Author"
-    year: "2005–2008"
+  - activity: "Colorado School of Mines Student Body (ASCSM) Secretary"
+    year: "2002–2003"
 
 SoftwareSkills:
   - area: "Core Language Proficiencies"
