@@ -143,10 +143,10 @@ h2 {
 
 @media screen and (max-width: $screen-xs-min) {
   @viewport {
-    zoom: 0.5;
+    zoom: 0.7;
   }
   .container {
-    width: 464px;
+    width: 400px;
   }
   .header {
     margin-top: 0;
