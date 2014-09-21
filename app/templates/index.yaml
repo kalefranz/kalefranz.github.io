@@ -213,7 +213,7 @@ SoftwareSkills:
   - area: "VMs & Containers"
     specifics: [Docker, Vagrant, Packer, VitualBox, VMWare Fusion]
   - area: "Linux Distros"
-    specifics: [CentOS, Ubuntu, CoreOS]
+    specifics: [CentOS, Ubuntu]
   - area: "Packaging & Package Managers"
     specifics: [RPM, pip, conda, Pants, npm, bower, Maven]
   - area: "Continuous Integration & Automation"
@@ -221,7 +221,7 @@ SoftwareSkills:
   - area: "Load Testing Frameworks"
     specifics: [JMeter, Grinder, Tsung]
   - area: "TDD & BDD"
-    specifics: [JUnit, pytest, nose, Mocha, Jasmine]
+    specifics: [JUnit, pytest, nose]
   - area: "E2E Testing"
     specifics: [Selenium, SauceLabs]
   - area: "Frameworks"

@@ -43,28 +43,31 @@ section {
   color: $almost-black;
 }
 
-.l1-group {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.l1-group > li {
-    margin-bottom: 1em;
-}
 
-.l2-group {
+.ul-group {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    line-height: 1.1em;
+    line-height: 1.45em;
 }
-.l2-group > li {
-    margin-bottom: 0.6em;
-}
-.l2-group .decorated {
+.ul-group .decorated {
     color: $bluejeans-dark;
     font-size: 0.9em;    
 }
+.ul-group > li {
+    margin-bottom: 1em;
+}
+.ul-group.spaced > li {
+  margin-bottom: 0.05em;
+}
+.ul-group.experience2 {
+  line-height: 1.55em;
+}
+
+
+
+
+
 
 .icon {
   color: $white;
@@ -136,6 +139,9 @@ h2 {
     color: $bluejeans-dark;
     margin-left: 0.15em;
     float: right;
+    line-height: 1.1em;
+    position: relative;
+    top: 0.21em;
 }
 .location {
     float: right;
@@ -145,9 +151,9 @@ h2 {
 .profile-panel {
     margin-top: 1.25em;
     font-family: "Crimson Text", seif;    
-    font-size: 1.3em;
+    font-size: 1.32em;
     line-height: 1.25em;
-    padding: 1em;
+    padding: 0.8em 0.8em 0.6em 1em;
     color: $passion;
     font-weight: 600;
     letter-spacing: 0.03em;
@@ -256,9 +262,12 @@ h2 {
   section {
     color: $black;
   }
+  .icon {
+    color: $mediumgray-dark;
+  }
 
   .header {
-    border-bottom: 4px solid $bluejeans-xlight;
+    border-bottom: 4px solid $bluejeans-dark;
   }
 
   body {

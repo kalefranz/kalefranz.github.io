@@ -54,7 +54,7 @@
 
     <section class="education">
     <h2>Education</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       {%- for x in Education %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -72,7 +72,7 @@
 
   <section class="non-technical-skills">
     <h2>Non-Technical Strengths</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in NonTechnicalSkills %}
       <li>
         <span class="area">{{ x.area }}</span>
@@ -83,7 +83,7 @@
 
   <section class="hardware-skills">
     <h2>Hardware Specialization</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in HardwareSkills %}
       <li>
         <span class="area">{{ x.area }}</span>
@@ -94,7 +94,7 @@
 
   <section class="software-skills">
     <h2>Software Skills</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in SoftwareSkills %}
       <li>
         {%- if x.specifics %}
@@ -110,7 +110,7 @@
 
   <section class="awards">
     <h2>Awards</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in Awards %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -122,7 +122,7 @@
 
   <section class="activities">
     <h2>Activities &amp; Volunteer Service</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in Activities %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -137,7 +137,7 @@
 
   <section class="experience">
     <h2>Experience</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       {%- for x in Experience.concat(Experience2) %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -175,9 +175,24 @@
 
   ga('create', 'UA-3187139-7', 'auto');
   ga('send', 'pageview');
-
 </script>
-
+<script>
+(function() {
+  var isChromium = !!window.chrome;
+  var beforePrint = function() {
+    alert("Printing is optimized for the Chrome browser.");
+  };
+  if (window.matchMedia) {
+    var mediaQueryList = window.matchMedia('print');
+    mediaQueryList.addListener(function(mql) {
+      if (mql.matches && !isChromium) {
+        beforePrint();
+      }
+    });
+  }
+  window.onbeforeprint = beforePrint;
+}());
+</script>
 
 
 <div class="container for-print">
@@ -191,7 +206,7 @@
 
     <section class="education">
     <h2>Education</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       {%- for x in Education %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -209,7 +224,7 @@
 
   <section class="software-skills">
     <h2>Software Skills</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in SoftwareSkills %}
       <li>
         {%- if x.specifics %}
@@ -228,7 +243,7 @@
 
   <section class="experience">
     <h2>Experience</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       {%- for x in Experience %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -262,7 +277,7 @@
 
   <section class="non-technical-skills">
     <h2>Non-Technical Strengths</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in NonTechnicalSkills %}
       <li>
         <span class="area">{{ x.area }}</span>
@@ -273,7 +288,7 @@
 
   <section class="hardware-skills">
     <h2>Hardware Specialization</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in HardwareSkills %}
       <li>
         <span class="area">{{ x.area }}</span>
@@ -284,7 +299,7 @@
 
   <section class="awards">
     <h2>Awards</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in Awards %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -296,7 +311,7 @@
 
   <section class="activities">
     <h2>Activities &amp; Volunteer Service</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       {%- for x in Activities %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -313,7 +328,7 @@
 
   <section class="experience">
     <h2>Experience (continued)</h2>
-    <ul class="l1-group">
+    <ul class="ul-group experience2">
       {%- for x in Experience2 %}
       <li>
         <span class="year">{{ x.year }}</span>
@@ -342,11 +357,6 @@
 </div> <!-- row -->
 
 </div> <!-- container -->
-
-
-
-
-
 
 </body>
 </html>
