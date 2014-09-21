@@ -1,4 +1,4 @@
-@import "bootstrap/bootstrap/variables";
+@import "bootstrap/bootstrap";
 
 
 $white:                       #FFF !default;
@@ -30,6 +30,13 @@ body {
     color: $black;
     min-width: 480px;
     margin-bottom: 2.5em;
+}
+
+.for-web {
+  display: block;
+}
+.for-print {
+  display: none;
 }
 
 section {
@@ -179,6 +186,85 @@ h2 {
 }
 
 @media print {
+
+  // * {
+  //   text-shadow: none !important;
+  //   background: transparent !important;
+  //   box-shadow: none !important;
+  // }
+
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  // Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245
+  // Once fixed, we can just straight up remove this.
+  select {
+    background: #fff !important;
+  }
+
+  // Bootstrap components
+  .table {
+    td,
+    th {
+      background-color: #fff !important;
+    }
+  }
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table-bordered {
+    th,
+    td {
+      border: 1px solid #ddd !important;
+    }
+  }
+
+
+
+  .for-web {
+    display: none;
+  }
+  .for-print {
+    display: block;
+  }
+  .pagebreak-before {
+    page-break-before: always;
+  }
+
+  section {
+    color: $black;
+  }
+
+  .header {
+    border-bottom: 4px solid $bluejeans-xlight;
+  }
+
+  body {
+    margin-bottom: 0;
+  }
+
   @page {
     size: 330mm 427mm;
     margin: 14mm;
@@ -186,7 +272,9 @@ h2 {
   .container {
     width: 1170px;
   }
-  h2 {
-    border-bottom-color: $mediumgray-light;
-  } 
+
+
+
+
+
 }

@@ -50,7 +50,7 @@ Experience:
       - "Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year."
       - "Architected scaling and redundancy strategies for multiple proprietary technologies."
       - "Authored 78% of server-side code for completely revamped technology platform."
-  - institution: Jet Propulsion Laboratory
+  - institution: NASA Jet Propulsion Laboratory
     year: "2010–2012"
     title: Microdevices Engineer
     location: "Pasadena, CA"
@@ -84,6 +84,8 @@ Experience:
       - "advanced quantum cascade laser design software"
       - "novel quantum cascade laser designs and strategies"
       - "mid-infrared spectroscopic sensing systems"
+
+Experience2:
   - institution: Princeton University
     year: "2004–2009"
     title: Research Assistant
@@ -188,7 +190,7 @@ Activities:
     year: "2000–2004"
   - activity: "Colorado School of Mines Tau Beta Pi Treasurer"
     year: "2003–2004"
-  - activity: "Colorado School of Mines Student Body (ASCSM) Secretary"
+  - activity: "Colorado School of Mines Student Body Secretary"
     year: "2002–2003"
 
 SoftwareSkills:

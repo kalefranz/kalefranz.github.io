@@ -15,7 +15,6 @@
   
   <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon">
   <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href='//fonts.googleapis.com/css?family=Ubuntu:400,500|Crimson+Text:600,600italic' rel='stylesheet' type='text/css'>
 
@@ -28,25 +27,25 @@
 
 <body>
 
-  <div class="container">
+<div class="container">
+  <div class="row header">
+      <h1 id="masthead">Kale J. Franz, PhD</h1>
 
-    <div class="row header">
-        <h1 id="masthead">Kale J. Franz, PhD</h1>
-
-        <table class="table" id="social-table">
-          <tr>
-            <td><i class="fa fa-envelope-o icon"></i> kale@franz.io</td>
-            <td><a href="https://twitter.com/kalefranz"><i class="fa fa-twitter icon"></i> @kalefranz</a></td>
-          </tr>
-            <td><a href="https://github.com/kalefranz"><i class="fa fa-github-alt icon"></i> kalefranz</a></td>
-            <td><a href="http://notinkansasnow.com/"><i class="fa fa-globe icon"></i> notinkansasnow.com</a></td>
-          <tr></tr>
-        </table>
-    </div>
+      <table class="table" id="social-table">
+        <tr>
+          <td><i class="fa fa-envelope-o icon"></i> kale@franz.io</td>
+          <td><a href="https://twitter.com/kalefranz"><i class="fa fa-twitter icon"></i> @kalefranz</a></td>
+        </tr>
+          <td><a href="https://github.com/kalefranz"><i class="fa fa-github-alt icon"></i> kalefranz</a></td>
+          <td><a href="http://notinkansasnow.com/"><i class="fa fa-globe icon"></i> notinkansasnow.com</a></td>
+        <tr></tr>
+      </table>
+  </div>
+</div>
 
 
-    <div class="row">
-
+<div class="container for-web">
+<div class="row">
   <div class="col-sm-5">
 
     <div class="profile-panel">
@@ -82,6 +81,17 @@
     </ul>
   </section>
 
+  <section class="hardware-skills">
+    <h2>Hardware Specialization</h2>
+    <ul class="l2-group">
+      {%- for x in HardwareSkills %}
+      <li>
+        <span class="area">{{ x.area }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
   <section class="software-skills">
     <h2>Software Skills</h2>
     <ul class="l2-group">
@@ -93,6 +103,169 @@
         {% else -%}
           <span class="area">{{ x.area }}</span>
         {% endif -%}        
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="awards">
+    <h2>Awards</h2>
+    <ul class="l2-group">
+      {%- for x in Awards %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="area">{{ x.award }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="activities">
+    <h2>Activities &amp; Volunteer Service</h2>
+    <ul class="l2-group">
+      {%- for x in Activities %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="area">{{ x.activity }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div>
+  <div class="col-sm-7">
+
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul class="l1-group">
+      {%- for x in Experience.concat(Experience2) %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="institution">{{ x.institution }}</span>
+        <span class="location">{{ x.location }}</span>
+        <span class="title">{{ x.title }}</span>
+        <ul class="details fa-ul">
+          {%- for detail in x.details %}
+            <li><i class="fa-li fa fa-caret-right"></i>{{ detail }}
+              {%- if loop.last and x.subdetails %}
+                <ul class="subdetails">
+                  {%- for subdetail in x.subdetails %}
+                  <li>{{ subdetail }}</li>
+                  {%- endfor %}
+                </ul>
+              {% endif -%}
+            </li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div> <!-- col-sm-7 -->
+</div> <!-- row -->
+</div> <!-- container -->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3187139-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<div class="container for-print">
+
+<div class="row">  <!-- PAGE #1 -->
+  <div class="col-sm-5">
+
+    <div class="profile-panel">
+      {{ ImpactStatement }}
+    </div>
+
+    <section class="education">
+    <h2>Education</h2>
+    <ul class="l1-group">
+      {%- for x in Education %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="institution">{{ x.institution }}</span>
+        <span class="title">{{ x.title }}</span>
+        <ul class="details fa-ul">
+          {%- for detail in x.details %}
+          <li><i class="fa-li fa fa-caret-right"></i>{{ detail }}</li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="software-skills">
+    <h2>Software Skills</h2>
+    <ul class="l2-group">
+      {%- for x in SoftwareSkills %}
+      <li>
+        {%- if x.specifics %}
+          <span class="area decorated">{{ x.area }}: </span>
+          <span class="specifics">{{ x.specifics|join(', ') }}</span>
+        {% else -%}
+          <span class="area">{{ x.area }}</span>
+        {% endif -%}        
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div>
+  <div class="col-sm-7">
+
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul class="l1-group">
+      {%- for x in Experience %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="institution">{{ x.institution }}</span>
+        <span class="location">{{ x.location }}</span>
+        <span class="title">{{ x.title }}</span>
+        <ul class="details fa-ul">
+          {%- for detail in x.details %}
+            <li><i class="fa-li fa fa-caret-right"></i>{{ detail }}
+              {%- if loop.last and x.subdetails %}
+                <ul class="subdetails">
+                  {%- for subdetail in x.subdetails %}
+                  <li>{{ subdetail }}</li>
+                  {%- endfor %}
+                </ul>
+              {% endif -%}
+            </li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div> <!-- col-sm-7 -->
+</div> <!-- row -->
+
+
+<div class="row pagebreak-before">  <!-- PAGE #2 -->
+  <div class="col-sm-5">
+
+  <section class="non-technical-skills">
+    <h2>Non-Technical Strengths</h2>
+    <ul class="l2-group">
+      {%- for x in NonTechnicalSkills %}
+      <li>
+        <span class="area">{{ x.area }}</span>
       </li>
       {%- endfor %}
     </ul>
@@ -133,13 +306,15 @@
     </ul>
   </section>
 
+
+
   </div>
   <div class="col-sm-7">
 
   <section class="experience">
-    <h2>Experience</h2>
+    <h2>Experience (continued)</h2>
     <ul class="l1-group">
-      {%- for x in Experience %}
+      {%- for x in Experience2 %}
       <li>
         <span class="year">{{ x.year }}</span>
         <span class="institution">{{ x.institution }}</span>
@@ -163,22 +338,14 @@
     </ul>
   </section>
 
-  </div>
-  </div>
-  </div>
+  </div> <!-- col-sm-7 -->
+</div> <!-- row -->
+
+</div> <!-- container -->
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-3187139-7', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 </body>

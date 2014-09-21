@@ -25,7 +25,7 @@ Education
 
 Experience
 ----------------------------------------------
-{%- for x in Experience %}
+{%- for x in Experience.concat(Experience2) %}
 {{ x.institution|safe }} >> {{ x.location|safe }}
 {{ x.title|safe }} -- {{ x.year|safe }}
 {%- for detail in x.details %}
@@ -66,7 +66,7 @@ Awards
 Activities & Volunteer Service
 ----------------------------------------------
 {%- for x in Activities %}
-{{ x.year|safe }}  {{ x.activity|safe|formatMarkdown(11, 79) }}
+{{ x.year|replace('–', '-', 'g')|safe }}  {{ x.activity|safe|formatMarkdown(11, 79) }}
 {%- endfor %}
 
 
