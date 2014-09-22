@@ -81,17 +81,6 @@
     </ul>
   </section>
 
-  <section class="hardware-skills">
-    <h2>Hardware Specialization</h2>
-    <ul class="ul-group spaced">
-      {%- for x in HardwareSkills %}
-      <li>
-        <span class="area">{{ x.area }}</span>
-      </li>
-      {%- endfor %}
-    </ul>
-  </section>
-
   <section class="software-skills">
     <h2>Software Skills</h2>
     <ul class="ul-group spaced">
@@ -103,6 +92,17 @@
         {% else -%}
           <span class="area">{{ x.area }}</span>
         {% endif -%}        
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="hardware-skills">
+    <h2>Hardware Specialization</h2>
+    <ul class="ul-group spaced">
+      {%- for x in HardwareSkills %}
+      <li>
+        <span class="area">{{ x.area }}</span>
       </li>
       {%- endfor %}
     </ul>
@@ -167,15 +167,6 @@
 </div> <!-- container -->
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-3187139-7', 'auto');
-  ga('send', 'pageview');
-</script>
 <script>
 (function() {
   var isChromium = !!window.chrome;
