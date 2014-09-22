@@ -52,7 +52,7 @@
 
     <section class="education">
     <h2>Education</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       <li>
         <span class="year">2009</span>
         <span class="institution">Princeton University</span>
@@ -95,7 +95,7 @@
 
   <section class="non-technical-skills">
     <h2>Non-Technical Strengths</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="area">Mentoring and teaching</span>
       </li>
@@ -131,7 +131,7 @@
 
   <section class="hardware-skills">
     <h2>Hardware Specialization</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="area">Quantum cascade lasers</span>
       </li>
@@ -155,7 +155,7 @@
 
   <section class="software-skills">
     <h2>Software Skills</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
           <span class="area decorated">Core Language Proficiencies: </span>
           <span class="specifics">Python, Java, Bash, C</span>
@@ -194,7 +194,7 @@
         </li>
       <li>
           <span class="area decorated">Linux Distros: </span>
-          <span class="specifics">CentOS, Ubuntu, CoreOS</span>
+          <span class="specifics">CentOS, Ubuntu</span>
         </li>
       <li>
           <span class="area decorated">Packaging &amp; Package Managers: </span>
@@ -210,7 +210,7 @@
         </li>
       <li>
           <span class="area decorated">TDD &amp; BDD: </span>
-          <span class="specifics">JUnit, pytest, nose, Mocha, Jasmine</span>
+          <span class="specifics">JUnit, pytest, nose</span>
         </li>
       <li>
           <span class="area decorated">E2E Testing: </span>
@@ -239,7 +239,7 @@
 
   <section class="awards">
     <h2>Awards</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="year">2011</span>
         <span class="area">Jet Propulsion Laboratory Team Award</span>
@@ -293,7 +293,7 @@
 
   <section class="activities">
     <h2>Activities &amp; Volunteer Service</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="year">2007–2009</span>
         <span class="area">Princeton University IEEE Student Chapter Executive Board</span>
@@ -350,7 +350,7 @@
 
   <section class="experience">
     <h2>Experience</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       <li>
         <span class="year">2013–present</span>
         <span class="institution">23andMe, Inc</span>
@@ -612,9 +612,24 @@
 
   ga('create', 'UA-3187139-7', 'auto');
   ga('send', 'pageview');
-
 </script>
-
+<script>
+(function() {
+  var isChromium = !!window.chrome;
+  var beforePrint = function() {
+    alert("Printing is optimized for the Chrome browser.");
+  };
+  if (window.matchMedia) {
+    var mediaQueryList = window.matchMedia('print');
+    mediaQueryList.addListener(function(mql) {
+      if (mql.matches && !isChromium) {
+        beforePrint();
+      }
+    });
+  }
+  window.onbeforeprint = beforePrint;
+}());
+</script>
 
 
 <div class="container for-print">
@@ -628,7 +643,7 @@
 
     <section class="education">
     <h2>Education</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       <li>
         <span class="year">2009</span>
         <span class="institution">Princeton University</span>
@@ -671,7 +686,7 @@
 
   <section class="software-skills">
     <h2>Software Skills</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
           <span class="area decorated">Core Language Proficiencies: </span>
           <span class="specifics">Python, Java, Bash, C</span>
@@ -710,7 +725,7 @@
         </li>
       <li>
           <span class="area decorated">Linux Distros: </span>
-          <span class="specifics">CentOS, Ubuntu, CoreOS</span>
+          <span class="specifics">CentOS, Ubuntu</span>
         </li>
       <li>
           <span class="area decorated">Packaging &amp; Package Managers: </span>
@@ -726,7 +741,7 @@
         </li>
       <li>
           <span class="area decorated">TDD &amp; BDD: </span>
-          <span class="specifics">JUnit, pytest, nose, Mocha, Jasmine</span>
+          <span class="specifics">JUnit, pytest, nose</span>
         </li>
       <li>
           <span class="area decorated">E2E Testing: </span>
@@ -758,7 +773,7 @@
 
   <section class="experience">
     <h2>Experience</h2>
-    <ul class="l1-group">
+    <ul class="ul-group">
       <li>
         <span class="year">2013–present</span>
         <span class="institution">23andMe, Inc</span>
@@ -895,7 +910,7 @@
 
   <section class="non-technical-skills">
     <h2>Non-Technical Strengths</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="area">Mentoring and teaching</span>
       </li>
@@ -931,7 +946,7 @@
 
   <section class="hardware-skills">
     <h2>Hardware Specialization</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="area">Quantum cascade lasers</span>
       </li>
@@ -955,7 +970,7 @@
 
   <section class="awards">
     <h2>Awards</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="year">2011</span>
         <span class="area">Jet Propulsion Laboratory Team Award</span>
@@ -1009,7 +1024,7 @@
 
   <section class="activities">
     <h2>Activities &amp; Volunteer Service</h2>
-    <ul class="l2-group">
+    <ul class="ul-group spaced">
       <li>
         <span class="year">2007–2009</span>
         <span class="area">Princeton University IEEE Student Chapter Executive Board</span>
@@ -1068,7 +1083,7 @@
 
   <section class="experience">
     <h2>Experience (continued)</h2>
-    <ul class="l1-group">
+    <ul class="ul-group experience2">
       <li>
         <span class="year">2004–2009</span>
         <span class="institution">Princeton University</span>
@@ -1197,11 +1212,6 @@
 </div> <!-- row -->
 
 </div> <!-- container -->
-
-
-
-
-
 
 </body>
 </html>
