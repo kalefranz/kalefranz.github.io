@@ -42,7 +42,7 @@ gulp.task('html', ['templates', 'styles', 'scripts'], function () {
     var jsFilter = $.filter('**/*.js');
     var cssFilter = $.filter('**/*.css');
 
-    return gulp.src(['app/*.html', '.tmp/*.html'])
+    return gulp.src(['app/*.html', '.tmp/*.html', '.tmp/*.txt'])
         .pipe($.useref.assets({searchPath: '{.tmp,app}'}))
         .pipe(jsFilter)
         .pipe($.uglify())
