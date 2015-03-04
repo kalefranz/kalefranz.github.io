@@ -52,7 +52,7 @@ section {
 }
 .ul-group .decorated {
     color: $bluejeans-dark;
-    font-size: 0.9em;    
+    font-size: 0.9em;
 }
 .ul-group > li {
     margin-bottom: 1em;
@@ -80,7 +80,7 @@ h2 {
     border-bottom: 2px solid $sunflower-dark;
 }
 .institution {
-    margin: 0;    
+    margin: 0;
     font-size: 1.3em;
     line-height: 1.1em;
     display: block;
@@ -107,20 +107,20 @@ h2 {
     font-style: italic;
     font-weight: 600;
     font-size: 3.5em;
-    line-height: 1.25em; 
+    line-height: 1.25em;
     letter-spacing: 0.04em;
     text-align: right;
     margin: 0;
     float: right;
 }
 #social-table {
-    margin-top: 0.625em;
+    margin-top: 3.625em;
     margin-bottom: 0;
-    width: 21.25em;
+    width: 24em;
 }
 #social-table td {
     border: 0;
-    padding: 0.25em;
+    padding: 0.25em;  // 0.25em
 }
 
 .header a {
@@ -132,7 +132,7 @@ h2 {
     background: $lightgray-light;
 }
 .header ::-moz-selection {
-    background: $lightgray-light; 
+    background: $lightgray-light;
 }
 
 .year {
@@ -150,7 +150,7 @@ h2 {
 
 .profile-panel {
     margin-top: 1.25em;
-    font-family: "Crimson Text", seif;    
+    font-family: "Crimson Text", seif;
     font-size: 1.32em;
     line-height: 1.25em;
     padding: 0.8em 0.8em 0.6em 1em;
@@ -190,14 +190,13 @@ h2 {
     padding-bottom: 0.15em;
   }
 }
+@media screen and (min-width: $screen-md-min) {
+  #social-table {
+    margin-top: 2.75em;
+  }
+}
 
 @media print {
-
-  // * {
-  //   text-shadow: none !important;
-  //   background: transparent !important;
-  //   box-shadow: none !important;
-  // }
 
   thead {
     display: table-header-group; // h5bp.com/t
@@ -247,6 +246,13 @@ h2 {
     }
   }
 
+  h2 {
+    margin-top: 15px;
+  }
+
+  .ul-group {
+    line-height: 1.4em;
+  }
 
 
   .for-web {
@@ -268,6 +274,10 @@ h2 {
 
   .header {
     border-bottom: 4px solid $bluejeans-dark;
+  }
+
+  #social-table {
+    margin-top: 2.5em;
   }
 
   body {

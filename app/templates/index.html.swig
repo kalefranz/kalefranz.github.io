@@ -12,10 +12,10 @@
       * Templated using javascript's swig library; data kept in yaml format
       * Custom gulp-swig plugin to compile and then deploy
   -->
-  
+
   <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon">
   <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='//fonts.googleapis.com/css?family=Ubuntu:400,500|Crimson+Text:600,600italic' rel='stylesheet' type='text/css'>
 
   <!-- build:css styles/main.css -->
@@ -30,15 +30,15 @@
 <div class="container">
   <div class="row header">
       <h1 id="masthead">Kale J. Franz, PhD</h1>
-
       <table class="table" id="social-table">
         <tr>
           <td><i class="fa fa-envelope-o icon"></i> kale@franz.io</td>
-          <td><a href="https://twitter.com/kalefranz"><i class="fa fa-twitter icon"></i> @kalefranz</a></td>
-        </tr>
           <td><a href="https://github.com/kalefranz"><i class="fa fa-github-alt icon"></i> kalefranz</a></td>
+          <td><a href="https://twitter.com/kalefranz"><i class="fa fa-fw icon">&#xf099</i>@kalefranz</a></td><!-- <i class="fa fa-twitter-square icon"></i> -->
+        </tr>
+         <!-- <tr>
           <td><a href="http://notinkansasnow.com/"><i class="fa fa-globe icon"></i> notinkansasnow.com</a></td>
-        <tr></tr>
+         </tr> -->
       </table>
   </div>
 </div>
@@ -70,17 +70,6 @@
     </ul>
   </section>
 
-  <section class="non-technical-skills">
-    <h2>Non-Technical Strengths</h2>
-    <ul class="ul-group spaced">
-      {%- for x in NonTechnicalSkills %}
-      <li>
-        <span class="area">{{ x.area }}</span>
-      </li>
-      {%- endfor %}
-    </ul>
-  </section>
-
   <section class="software-skills">
     <h2>Software Skills</h2>
     <ul class="ul-group spaced">
@@ -91,7 +80,7 @@
           <span class="specifics">{{ x.specifics|join(', ') }}</span>
         {% else -%}
           <span class="area">{{ x.area }}</span>
-        {% endif -%}        
+        {% endif -%}
       </li>
       {%- endfor %}
     </ul>
@@ -101,6 +90,17 @@
     <h2>Hardware Specialization</h2>
     <ul class="ul-group spaced">
       {%- for x in HardwareSkills %}
+      <li>
+        <span class="area">{{ x.area }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="non-technical-skills">
+    <h2>Non-Technical Strengths</h2>
+    <ul class="ul-group spaced">
+      {%- for x in NonTechnicalSkills %}
       <li>
         <span class="area">{{ x.area }}</span>
       </li>
@@ -223,7 +223,7 @@
           <span class="specifics">{{ x.specifics|join(', ') }}</span>
         {% else -%}
           <span class="area">{{ x.area }}</span>
-        {% endif -%}        
+        {% endif -%}
       </li>
       {%- endfor %}
     </ul>
