@@ -25,7 +25,7 @@ $passion:                     #cc2839 !default;
 
 body {
     background: $white;
-    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-family: Roboto, Ubuntu, Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: $black;
     min-width: 480px;
@@ -77,7 +77,7 @@ section {
 
 h2 {
     color: $bluejeans-dark;
-    border-bottom: 2px solid $sunflower-dark;
+    border-bottom: 2px solid $mediumgray-dark;
 }
 .institution {
     margin: 0;
