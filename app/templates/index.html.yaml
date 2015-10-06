@@ -30,10 +30,10 @@ Education:
 Experience:
   - institution: "23andMe, Inc"
     year: "2013–present"
-    title: Senior Software Engineer
+    title: Cloud Infrastructure and Automation Tech Lead
     location: "Mountain View, CA"
     details:
-      - "Performance and Security Group"
+      - "Started as a Senior Software Engineer in the Performance and Security Group"
   - institution: "BioDiscovery, Inc"
     year: "2013"
     title: Senior Software Engineer
@@ -91,7 +91,7 @@ Experience2:
     title: Research Assistant
     location: "Princeton, NJ"
     details:
-      - "Researched and developed infrared lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures."
+      - "Developed infrared lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures."
       - 'Invented new mechanism for achieving lasing in quantum cascade lasers through "high k-space lasing"; U.S.Patent Application 11744508.'
       - 'Invented "short injector" quantum cascade lasers that led to lowered threshold current and deeper understanding of QC laser physics.'
       - "Invented ultra-strong coupling quantum cascade laser designs that led to world record 50% wall-plug efficiencies; U.S. Patent Application 12795954."
@@ -198,24 +198,24 @@ SoftwareSkills:
     specifics: [Python, Java, Bash, C]
   - area: "Substantial Language Experience"
     specifics: [JavaScript, Go, Scala, R, LaTeX, LabVIEW, MATLAB, Mathematica]
-  - area: "NoSQL Databases"
-    specifics: [MongoDB, OrientDB, Cassandra]
+  - area: "Relational Databases"
+    specifics: [MySQL, PostgreSQL, SQLite]
   - area: "Distributed Data Grids & Caching"
     specifics: [Redis, Memcached, Terracotta, Hazelcast]
-  - area: "Relational Databases"
-    specifics: [MySQL, SQLite]
+  - area: "NoSQL Databases"
+    specifics: [MongoDB, HBase, Cassandra]
   - area: "Message & Task Queues"
     specifics: [RabbitMQ, AWS SQS, Celery]
   - area: "Application & Web Servers"
     specifics: [nginx, Apache, uWSGI, Tomcat, Jetty, ejabberd]
-  - area: "Cloud-Based Infrastructure"
+  - area: "Cloud Infrastructure"
     specifics: [Amazon Web Services, Google Cloud Platform, Digital Ocean]
   - area: "VMs & Containers"
     specifics: [Docker, Vagrant, Packer, VitualBox, VMWare Fusion]
   - area: "Linux Distros"
-    specifics: [CentOS, Ubuntu]
+    specifics: [CentOS, Ubuntu, Debian]
   - area: "Packaging & Package Managers"
-    specifics: [RPM, pip, conda, Pants, npm, bower, Maven]
+    specifics: [RPM, pip, conda, Pants, npm, Maven]
   - area: "Continuous Integration & Automation"
     specifics: [Ansible, Fabric, Jenkins, TravisCI]
   - area: "Load Testing Frameworks"
@@ -228,6 +228,7 @@ SoftwareSkills:
     specifics: [Django, AngularJS, jQuery, Foundation, Twitter Bootstrap, Qt, Swing, JavaFX]
   - area: "Protocols"
     specifics: [HTTP, XMPP, Thrift]
+  - area: "Microservices"
   - area: "Design Patterns"
   - area: "Algorithm Design and Development"
   - area: "RESTful APIs"

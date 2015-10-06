@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="/favicon.ico?v=3" type="image/x-icon">
   <link rel="icon" href="/favicon.ico?v=3" type="image/x-icon">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='//fonts.googleapis.com/css?family=Ubuntu:400,500|Crimson+Text:600,600italic|Roboto:400,500,300italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Roboto:300,500|Crimson+Text:600italic' rel='stylesheet' type='text/css'>
 
   <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -29,7 +29,7 @@
 
 <div class="container">
   <div class="row header">
-      <h1 id="masthead">Kale J. Franz, PhD</h1>
+      <h1 id="masthead">Kale J. Franz</h1>
       <table class="table" id="social-table">
         <tr>
           <td><i class="fa fa-envelope-o icon"></i> kale@franz.io</td>
@@ -47,6 +47,8 @@
 <div class="container for-web">
 <div class="row">
   <div class="col-sm-5">
+
+
     {% if ImpactStatement %}
     <div class="profile-panel">
       {{ ImpactStatement }}
@@ -121,6 +123,7 @@
     </ul>
   </section>
 
+  {#
   <section class="activities">
     <h2>Activities &amp; Volunteer Service</h2>
     <ul class="ul-group spaced">
@@ -132,6 +135,7 @@
       {%- endfor %}
     </ul>
   </section>
+  #}
 
   </div>
   <div class="col-sm-7">
@@ -192,9 +196,11 @@
 <div class="row">  <!-- PAGE #1 -->
   <div class="col-sm-5">
 
+    {% if ImpactStatement %}
     <div class="profile-panel">
       {{ ImpactStatement }}
     </div>
+    {% endif %}
 
     <section class="education">
     <h2>Education</h2>
@@ -301,6 +307,7 @@
     </ul>
   </section>
 
+  {#
   <section class="activities">
     <h2>Activities &amp; Volunteer Service</h2>
     <ul class="ul-group spaced">
@@ -312,7 +319,7 @@
       {%- endfor %}
     </ul>
   </section>
-
+  #}
 
 
   </div>

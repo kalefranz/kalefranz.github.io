@@ -22,12 +22,18 @@ $darkgray-light:              #656D78 !default;
 $almost-black:                #333 !default;
 $bluejeans-xlight:            #91bbf2 !default;
 $passion:                     #cc2839 !default;
+$worksurge-blue:              #0075a3 !default;
+$worksurge-blue-dark:         #00506f !default;
 
 body {
     background: $white;
     font-family: Roboto, Ubuntu, Helvetica, Arial, sans-serif;
+<<<<<<< 395a691967ed1554c5edb102d36e6ba2c79859e7
+=======
+    font-weight: 300;
+>>>>>>> updated resume
     font-size: 16px;
-    color: $black;
+    color: $almost-black;
     min-width: 480px;
     margin-bottom: 2.5em;
 }
@@ -39,10 +45,6 @@ body {
   display: none;
 }
 
-section {
-  color: $almost-black;
-}
-
 
 .ul-group {
     list-style-type: none;
@@ -51,33 +53,38 @@ section {
     line-height: 1.45em;
 }
 .ul-group .decorated {
-    color: $bluejeans-dark;
-    font-size: 0.9em;
+    color: $worksurge-blue-dark;
+    font-size: 0.95em;
 }
 .ul-group > li {
     margin-bottom: 1em;
 }
 .ul-group.spaced > li {
+  margin-bottom: 0.25em;
+}
+//.ul-group.experience2 {
+//  line-height: 1.55em;
+//}
+.ul-group .details li {
   margin-bottom: 0.05em;
 }
-.ul-group.experience2 {
-  line-height: 1.55em;
-}
-
 
 
 
 
 
 .icon {
-  color: $white;
+  color: $darkgray-dark;
   font-size: 1.2em;
 }
 
 
 h2 {
-    color: $bluejeans-dark;
-    border-bottom: 2px solid $mediumgray-dark;
+    // color: $bluejeans-dark;  // merge conflict
+    // border-bottom: 2px solid $mediumgray-dark;  // merge conflict
+    color: $almost-black;
+    border-bottom: 2px solid $worksurge-blue;
+    margin-top: 26px;
 }
 .institution {
     margin: 0;
@@ -87,7 +94,7 @@ h2 {
     font-weight: 500;
 }
 .title {
-    color: $bluejeans-dark;
+    color: $worksurge-blue-dark;
     font-size: 1.1em;
     font-weight: 500;
 }
@@ -97,10 +104,9 @@ h2 {
 }
 
 .header {
-    background-color: $bluejeans-xlight;
     margin-top: 20px;
     padding: 0 20px 0.75em;
-    color: $black;
+    border-bottom: 4px solid $worksurge-blue;
 }
 .header #masthead {
     font-family: "Crimson Text", serif;
@@ -120,7 +126,11 @@ h2 {
 }
 #social-table td {
     border: 0;
-    padding: 0.25em;  // 0.25em
+    padding: 0.25em;
+    color: $darkgray-dark;
+}
+#social-table a {
+    color: $darkgray-dark;
 }
 
 .header a {
@@ -136,7 +146,7 @@ h2 {
 }
 
 .year {
-    color: $bluejeans-dark;
+    color: $worksurge-blue-dark;
     margin-left: 0.15em;
     float: right;
     line-height: 1.1em;
@@ -181,9 +191,6 @@ h2 {
   }
 }
 @media screen and (max-width: $screen-sm-max) {
-  body {
-    font-size: 14px;
-  }
   .header h1 {
     font-size: 3.1em;
     line-height: 1.4em;
@@ -197,6 +204,11 @@ h2 {
 }
 
 @media print {
+
+  body {
+    color: $black;
+    margin-bottom: 0;
+  }
 
   thead {
     display: table-header-group; // h5bp.com/t
@@ -226,14 +238,14 @@ h2 {
   // Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245
   // Once fixed, we can just straight up remove this.
   select {
-    background: #fff !important;
+    background: $white !important;
   }
 
   // Bootstrap components
   .table {
     td,
     th {
-      background-color: #fff !important;
+      background-color: $white !important;
     }
   }
   .table {
@@ -246,13 +258,13 @@ h2 {
     }
   }
 
-  h2 {
-    margin-top: 15px;
-  }
+//  h2 {
+//    margin-top: 15px;
+//  }
 
-  .ul-group {
-    line-height: 1.4em;
-  }
+//  .ul-group {
+//    line-height: 1.4em;
+//  }
 
 
   .for-web {
@@ -265,23 +277,12 @@ h2 {
     page-break-before: always;
   }
 
-  section {
-    color: $black;
-  }
-  .icon {
-    color: $mediumgray-dark;
-  }
-
   .header {
-    border-bottom: 4px solid $bluejeans-dark;
+    border-bottom: 4px solid $worksurge-blue;
   }
 
   #social-table {
     margin-top: 2.5em;
-  }
-
-  body {
-    margin-bottom: 0;
   }
 
   @page {
@@ -291,9 +292,5 @@ h2 {
   .container {
     width: 1170px;
   }
-
-
-
-
 
 }
