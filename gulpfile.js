@@ -100,7 +100,7 @@ gulp.task('extras', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
+    return gulp.src(['.tmp', 'dist', '.publish'], { read: false }).pipe($.clean());
 });
 
 // gulp.task('build', ['html', 'images', 'styles', 'extras']);
@@ -149,7 +149,7 @@ gulp.task('build', gulp.series('clean', gulp.series(gulp.parallel('templates', '
 //     gulp.watch('bower.json', ['wiredep']);
 // });
 
-// gulp.task('deploy', ['build'], function () {
-//     gulp.src("./dist/**/*")
-//         .pipe($.ghPages({branch: 'master'}));
-// });
+gulp.task('deploy', gulp.series('build', function () {
+    gulp.src("./dist/**/*")
+        .pipe($.ghPages({branch: 'master'}));
+}));
