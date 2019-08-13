@@ -1,4 +1,5 @@
-@import "bootstrap/bootstrap";
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap-grid";
 
 
 $white:                       #FFF !default;
@@ -28,10 +29,7 @@ $worksurge-blue-dark:         #00506f !default;
 body {
     background: $white;
     font-family: Roboto, Ubuntu, Helvetica, Arial, sans-serif;
-<<<<<<< 395a691967ed1554c5edb102d36e6ba2c79859e7
-=======
     font-weight: 300;
->>>>>>> updated resume
     font-size: 16px;
     color: $almost-black;
     min-width: 480px;
@@ -105,8 +103,12 @@ h2 {
 
 .header {
     margin-top: 20px;
-    padding: 0 20px 0.75em;
+    padding: 0 15px 0.5em;
     border-bottom: 4px solid $worksurge-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
 }
 .header #masthead {
     font-family: "Crimson Text", serif;
@@ -120,14 +122,18 @@ h2 {
     float: right;
 }
 #social-table {
-    margin-top: 3.625em;
+    margin-top: 0;
     margin-bottom: 0;
     width: 24em;
 }
 #social-table td {
     border: 0;
-    padding: 0.25em;
+    padding-left: 0;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     color: $darkgray-dark;
+    text-align: left;
 }
 #social-table a {
     color: $darkgray-dark;
@@ -169,8 +175,9 @@ h2 {
     letter-spacing: 0.03em;
 }
 
-
-@media screen and (max-width: $screen-xs-min) {
+/*
+// @media screen and (max-width: $screen-xs-min) {
+@include media-breakpoint-down(xs) {
   @viewport {
     zoom: 0.7;
   }
@@ -184,35 +191,50 @@ h2 {
     line-height: 1em;
   }
 }
+*/
 
-@media screen and (max-width: $screen-xs-max) {
+/*
+// @media screen and (max-width: $screen-xs-max) {
+@media screen and (media-breakpoint-up(xs)) {
   .container {
     width: 530px;
   }
 }
-@media screen and (max-width: $screen-sm-max) {
+// @media screen and (max-width: $screen-sm-max) {
+@media screen and (media-breakpoint-up(sm)) {
   .header h1 {
     font-size: 3.1em;
     line-height: 1.4em;
     padding-bottom: 0.15em;
   }
 }
-@media screen and (min-width: $screen-md-min) {
+*/
+@include media-breakpoint-up(md) {
   #social-table {
-    margin-top: 2.75em;
+    margin-top: -1.8em;
   }
 }
 
+
+
+
 @media print {
+
+  @for $i from 1 through 12 {
+      .col-print-#{$i} {
+          width: #{percentage(round($i*8.33)/100)};
+          float: left;
+      }
+  }
 
   body {
     color: $black;
     margin-bottom: 0;
   }
 
-  thead {
-    display: table-header-group; // h5bp.com/t
-  }
+//  thead {
+//    display: table-header-group; // h5bp.com/t
+//  }
 
   tr,
   img {
@@ -233,12 +255,6 @@ h2 {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-
-  // Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245
-  // Once fixed, we can just straight up remove this.
-  select {
-    background: $white !important;
   }
 
   // Bootstrap components
@@ -268,10 +284,10 @@ h2 {
 
 
   .for-web {
-    display: none;
+    display: block;
   }
   .for-print {
-    display: block;
+    display: none;
   }
   .pagebreak-before {
     page-break-before: always;
@@ -281,10 +297,17 @@ h2 {
     border-bottom: 4px solid $worksurge-blue;
   }
 
+  .container {
+    width: auto;
+  }
+
+/*
   #social-table {
     margin-top: 2.5em;
   }
+*/
 
+/*
   @page {
     size: 330mm 427mm;
     margin: 14mm;
@@ -292,5 +315,6 @@ h2 {
   .container {
     width: 1170px;
   }
-
+*/
 }
+
