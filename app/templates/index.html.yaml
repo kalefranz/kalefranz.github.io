@@ -1,266 +1,270 @@
 ---
 
-# ImpactStatement: "Passionate about conquering hard problems for a better future. Leveraging hardware, software, and non-technical skill sets in a knowledge-accelerating world."
-
 Education:
   - institution: Princeton University
-    year: "2009"
-    title: "PhD in Electrical Engineering"
-    location: "Princeton, NJ"
+    year: 2009
+    title: PhD in Electrical Engineering
+    location: Princeton, NJ
     details:
       - Wallace Fellow (top 24 recognition within PhD cohort)
       - Wu Prize for Excellence
   - institution: Princeton University
-    year: "2006"
-    title: "MA in Electrical Engineering"
-    location: "Princeton, NJ"
+    year: 2006
+    title: MA in Electrical Engineering
+    location: Princeton, NJ
     details:
-      - "With coursework through the Woodrow Wilson School of Public & International Affairs"
+      - With coursework through the Woodrow Wilson School of Public & International Affairs
       - National Science Foundation Graduate Research Fellowship
   - institution: Colorado School of Mines
-    year: "2004"
-    title: "BS in Physics"
-    location: "Golden, CO"
+    year: 2004
+    title: BS in Physics
+    location: Golden, CO
     details:
       - "Minors: Electrical Engineering, Public Affairs"
-      - "GPA 4.00/4.00 (1st in class)"
-      - "Dean's Service Award"
-      - "Member, Board of Trustees"
+      - GPA 4.00/4.00 (1st in class)
+      - Dean's Service Award
+      - Member, Board of Trustees
 
 Experience:
-  - institution: "23andMe, Inc"
-    year: "2013–present"
+  - institution: Anaconda, Inc
+    year: 2018–present
+    title: Principal Software Engineer
+    location: Austin, TX
+    details:
+      - Building the next generation of the Anaconda Enterpise data science platform.
+  - institution: Anaconda, Inc
+    year: 2016–2018
+    title: Conda Lead Developer
+    location: Austin, TX
+    details:
+      - Conda is an open source software delivery platform that counts some 16 million users installing more than two petabytes of software every month. It is compatible with all operating systems and all programming language ecosystems. With roots in the data science community, Conda's built-out package support is especially strong for Python and R on Linux, macOS, and Windows. Conda is the package manager that drives the Anaconda data science platform.
+      - As the project lead for more than 2.5 years, I filled the roles of both lead developer and product manager. Interacting with users via the project's GitHub issue tracker, feature development priorities were set collaboratively, integrating over input from a diverse set of stakeholders. Not only did we deliver impactful new features and capabilities, but we also advanced test coverage from 40% to over 90% while stabilizing release cycles to provide reliability for our users.
+  - institution: 23andMe, Inc
+    year: 2015
     title: Cloud Infrastructure and Automation Tech Lead
-    location: "Mountain View, CA"
+    location: Mountain View, CA
     details:
-      - "Started as a Senior Software Engineer in the Performance and Security Group"
-  - institution: "BioDiscovery, Inc"
-    year: "2013"
+      - Founded, lead, and managed the first dedicated DevOps team.
+      - With four engineers, transitioned infrastructure from bare metal colo hardware to AWS, within the context of the stringent information security requirements of a regulated industry.
+  - institution: 23andMe, Inc
+    year: 2013–2015
+    title: Senior Software Engineer, Performance and Security Group
+    location: Mountain View, CA
+    details:
+      - Introduced message queues within the engineering infrastructure, and implemented the first use cases.
+      - Created and deployed local vagrant-based development environments so engineers could write and test code on their local machines. With a legacy eight years' development on a single monolithic app, veteran engineers thought it couldn't be done. Previously, all dev was done on a single, centralized mainframe.
+      - Successfully abstracted and decoupled the engineering application stack from the techops infrastructure stack with a "deploy anywhere" philosophy.
+  - institution: BioDiscovery, Inc
+    year: 2013
     title: Senior Software Engineer
-    location: "El Segundo, CA"
+    location: El Segundo, CA
     details:
-      - "Implemented numerically-efficient versions of several published algorithms for analyzing DNA microarray and Next Generation Sequencing data."
-      - "Architected and initiated development on a secure and flexible license management system."
-      - "Introduced and implemented modern software development practices, including a code and architecture documentation strategy, a transition from Subversion to Git version control, and a peer code review process."
-  - institution: "Grindr LLC & Blendr LLC"
-    year: "2012–2013"
+      - Implemented numerically-efficient versions of several published algorithms for analyzing DNA microarray and Next Generation Sequencing data.
+      - Architected and initiated development on a secure and flexible license management system.
+      - Introduced and implemented modern software development practices, including a code and architecture documentation strategy, a transition from Subversion to Git version control, and a peer code review process.
+  - institution: Grindr LLC & Blendr LLC
+    year: 2012–2013
     title: Core Software Engineer
-    location: "Hollywood, CA"
+    location: Hollywood, CA
     details:
-      - "Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year."
-      - "Architected scaling and redundancy strategies for multiple proprietary technologies."
-      - "Authored 78% of server-side code for completely revamped technology platform."
+      - Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year.
+      - Architected scaling and redundancy strategies for multiple proprietary technologies.
+      - Authored 78% of server-side code for completely revamped technology platform.
   - institution: NASA Jet Propulsion Laboratory
-    year: "2010–2012"
+    year: 2010–2012
     title: Microdevices Engineer
-    location: "Pasadena, CA"
+    location: Pasadena, CA
     details:
-      - 'Principal Investigator for JPL award "Low power consumption lasers".'
+      - Principal Investigator for JPL award "Low power consumption lasers".
       - "Developed ErwinJr software package for quantum cascade laser simulation; NTR #48342; released publicly as open source. Written in a combination of Python and C++."
-      - "Demonstrated first near-room temperature continuous wave quantum cascade laser fabricated within NASA for AEMC (Advanced Environmental Monitoring and Control) project."
-      - "Designed, fabricated, and tested 4.x µm quantum cascade lasers for CO detection."
-      - "Demonstrated high power (>100 mW) room temperature continuous wave 2.05 µm single spatial mode lasers for CO₂ lidar."
-      - "Demonstrated world's first high power (>70 mW) room temperature continuous wave 2.05 µm distributed feedback lasers for NASA ASCENDS (Active Sensing of CO₂ Emissions over Nights, Days, and Seasons) deliverable."
-      - "Developed advanced packaging techniques and procedures for high reliability laser operation."
-      - "Mentored multiple graduate student interns."
+      - Demonstrated first near-room temperature continuous wave quantum cascade laser fabricated within NASA for AEMC (Advanced Environmental Monitoring and Control) project.
+      - Designed, fabricated, and tested 4.x µm quantum cascade lasers for CO detection.
+      - Demonstrated high power (>100 mW) room temperature continuous wave 2.05 µm single spatial mode lasers for CO₂ lidar.
+      - Demonstrated world's first high power (>70 mW) room temperature continuous wave 2.05 µm distributed feedback lasers for NASA ASCENDS (Active Sensing of CO₂ Emissions over Nights, Days, and Seasons) deliverable.
+      - Developed advanced packaging techniques and procedures for high reliability laser operation.
+      - Mentored multiple graduate student interns.
   - institution: Princeton University
-    year: "2009–2010"
+    year: 2009–2010
     title: Postdoc Research Engineer
-    location: "Princeton, NJ"
+    location: Princeton, NJ
     details:
-      - "Developed traditional heterodyne detection systems for trace gas sensing."
-      - "Researched non-traditional heterodyne techniques."
-      - "Designed and built opto-electronic systems from off-the-shelf and research-grade components."
-      - "Authored detection and analysis algorithms in MATLAB."
+      - Developed traditional heterodyne detection systems for trace gas sensing.
+      - Researched non-traditional heterodyne techniques.
+      - Designed and built opto-electronic systems from off-the-shelf and research-grade components.
+      - Authored detection and analysis algorithms in MATLAB.
   - institution: Primis Technologies LLC
-    year: "2006–2009"
-    title: "Founding Partner & Senior Engineer"
-    location: "Princeton, NJ"
+    year: 2006–2009
+    title: Founding Partner & Senior Engineer
+    location: Princeton, NJ
     details:
-      - "Founded a startup company leveraging graduate research in mid-infrared laser and systems technology."
-      - "Authored funding proposals for spectroscopic sensor systems and laser development."
-      - "Developed core intellectual property, including"
+      - Founded a startup company leveraging graduate research in mid-infrared laser and systems technology.
+      - Authored funding proposals for spectroscopic sensor systems and laser development.
+      - Developed core intellectual property, including
     subdetails:
-      - "advanced quantum cascade laser design software"
-      - "novel quantum cascade laser designs and strategies"
-      - "mid-infrared spectroscopic sensing systems"
+      - advanced quantum cascade laser design software
+      - novel quantum cascade laser designs and strategies
+      - mid-infrared spectroscopic sensing systems
 
 Experience2:
   - institution: Princeton University
-    year: "2004–2009"
+    year: 2004–2009
     title: Research Assistant
-    location: "Princeton, NJ"
+    location: Princeton, NJ
     details:
-      - "Developed infrared lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures."
-      - 'Invented new mechanism for achieving lasing in quantum cascade lasers through "high k-space lasing"; U.S.Patent Application 11744508.'
-      - 'Invented "short injector" quantum cascade lasers that led to lowered threshold current and deeper understanding of QC laser physics.'
-      - "Invented ultra-strong coupling quantum cascade laser designs that led to world record 50% wall-plug efficiencies; U.S. Patent Application 12795954."
-      - "Demonstrated world’s first intersubband emission from II-VI quantum cascade structures."
-      - "Experience includes"
+      - Developed infrared lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures.
+      - Invented new mechanism for achieving lasing in quantum cascade lasers through "high k-space lasing"; U.S.Patent Application 11744508.
+      - Invented "short injector" quantum cascade lasers that led to lowered threshold current and deeper understanding of QC laser physics.
+      - Invented ultra-strong coupling quantum cascade laser designs that led to world record 50% wall-plug efficiencies; U.S. Patent Application 12795954.
+      - Demonstrated world’s first intersubband emission from II-VI quantum cascade structures.
+      - Experience includes
     subdetails:
-      - "Molecular beam epitaxy of III-V and II-VI materials and devices, including quantum cascade lasers"
-      - "III-V and II-VI compound semiconductor micro- and nanofabrication tools and techniques"
-      - "Optoelectronics production packaging"
-      - "C++, MATLAB, and finite element programming and optimization for operational analysis"
-      - "Commercial and self-coded software for electromagnetic, optical, and thermal modeling and simulation"
-      - "Mid-infrared optoelectronic device characterization and analysis for sensing and communication systems"
-      - "Spectroscopic analysis techniques"
-  - institution: "AdTech Optics, Inc."
-    year: "2007"
+      - Molecular beam epitaxy of III-V and II-VI materials and devices, including quantum cascade lasers
+      - III-V and II-VI compound semiconductor micro- and nanofabrication tools and techniques
+      - Optoelectronics production packaging
+      - C++, MATLAB, and finite element programming and optimization for operational analysis
+      - Commercial and self-coded software for electromagnetic, optical, and thermal modeling and simulation
+      - Mid-infrared optoelectronic device characterization and analysis for sensing and communication systems
+      - Spectroscopic analysis techniques
+  - institution: AdTech Optics, Inc.
+    year: 2007
     title: Technical Consultant
-    location: "City of Industry, CA"
+    location: City of Industry, CA
     details:
-      - "Collaborated on DARPA-funded quantum cascade laser design and development contract for infrared countermeasures."
-      - "Developed instrumentation for automated quantum cascade laser test and analysis systems."
-      - "Authored and performed test procedures for quality assurance of mission critical components."
-      - "Advised on production flow improvements based on broad process knowledge."
+      - Collaborated on DARPA-funded quantum cascade laser design and development contract for infrared countermeasures.
+      - Developed instrumentation for automated quantum cascade laser test and analysis systems.
+      - Authored and performed test procedures for quality assurance of mission critical components.
+      - Advised on production flow improvements based on broad process knowledge.
   - institution: National Renewable Energy Laboratory
-    year: "2003–2004"
+    year: 2003–2004
     title: Research Intern
-    location: "Golden, CO"
+    location: Golden, CO
     details:
-      - "Researched novel approaches to arc-discharge carbon nanotube synthesis."
-      - "Constructed an automated prototype nanotube growth system."
-      - "Synthesized carbon nanotubes through a laser vaporization process."
-      - "Used Raman spectroscopy, transmission electron microscopy, and thermogravimetric analysis characterization techniques."
-  - institution: "Colorado State House of Representatives"
-    year: "2002"
+      - Researched novel approaches to arc-discharge carbon nanotube synthesis.
+      - Constructed an automated prototype nanotube growth system.
+      - Synthesized carbon nanotubes through a laser vaporization process.
+      - Used Raman spectroscopy, transmission electron microscopy, and thermogravimetric analysis characterization techniques.
+  - institution: Colorado State House of Representatives
+    year: 2002
     title: Legislative Intern
-    location: "Denver, CO"
+    location: Denver, CO
     details:
-      - "Aid to Representative Brad Young, Chairman of the Joint Budget Committee"
-      - "Drafted responses to constituent mail"
-      - "Assisted in analysis of TaBOR effects on state budget"
-  - institution: "U.S. Department of Energy, Office of Science"
-    year: "2001–2002"
+      - Aid to Representative Brad Young, Chairman of the Joint Budget Committee
+      - Drafted responses to constituent mail
+      - Assisted in analysis of TaBOR effects on state budget
+  - institution: U.S. Department of Energy, Office of Science
+    year: 2001–2002
     title: Intern
-    location: "Washington, D.C."
+    location: Washington, D.C.
     details:
-      - "Traveled to DOE National Labs assisting University of Washington Center for Workforce Development in internship program review and evaluation, examining program value and customer (intern) satisfaction."
-      - "Advised on strategic direction for individual programs and department mission."
-      - "Editor and contributing author for first and second volumes of DOE Office of Science Journal of Undergraduate Research."
-      - "Worked directly under an Office of Science director in policy-related matters, including program management and Congressional budget proposals."
+      - Traveled to DOE National Labs assisting University of Washington Center for Workforce Development in internship program review and evaluation, examining program value and customer (intern) satisfaction.
+      - Advised on strategic direction for individual programs and department mission.
+      - Editor and contributing author for first and second volumes of DOE Office of Science Journal of Undergraduate Research.
+      - Worked directly under an Office of Science director in policy-related matters, including program management and Congressional budget proposals.
 
 Awards:
-  - award: "Jet Propulsion Laboratory Team Award"
-    year: "2011"
-  - award: "Princeton University Wallace Fellow (signifying top 24 recognition within PhD cohort)"
-    year: "2008"
-  - award: "Princeton University Wu Prize for Excellence"
-    year: "2008"
-  - award: "Sigma Xi"
-    year: "2008"
-  - award: "IEEE Indium Phosphide and Related Materials Conference Best Student Paper Award"
-    year: "2006"
-  - award: "National Science Foundation Graduate Research Fellowship"
-    year: "2004"
-  - award: "Colorado School of Mines Highest Scholastic (first in class) Honors"
-    year: "2004"
-  - award: "Colorado School of Mines McBride Honors Program Philipose Senior Award"
-    year: "2004"
-  - award: "Colorado School of Mines Physics Faculty Distinguished Graduate Award"
-    year: "2004"
-  - award: "Colorado School of Mines Dean’s Service Award"
-    year: "2004"
-  - award: "Tau Beta Pi"
-    year: "2002"
-  - award: "American FFA Degree"
-    year: "2000"
+  - award: Jet Propulsion Laboratory Team Award
+    year: 2011
+  - award: Princeton University Wallace Fellow (signifying top 24 recognition within PhD cohort)
+    year: 2008
+  - award: Princeton University Wu Prize for Excellence
+    year: 2008
+  - award: Sigma Xi
+    year: 2008
+  - award: IEEE Indium Phosphide and Related Materials Conference Best Student Paper Award
+    year: 2006
+  - award: National Science Foundation Graduate Research Fellowship
+    year: 2004
+  - award: Colorado School of Mines Highest Scholastic (first in class) Honors
+    year: 2004
+  - award: Colorado School of Mines McBride Honors Program Philipose Senior Award
+    year: 2004
+  - award: Colorado School of Mines Physics Faculty Distinguished Graduate Award
+    year: 2004
+  - award: Colorado School of Mines Dean’s Service Award
+    year: 2004
+  - award: Tau Beta Pi
+    year: 2002
+  - award: American FFA Degree
+    year: 2000
 
 Activities:
-  - activity: "Princeton University IEEE Student Chapter Executive Board"
-    year: "2007–2009"
-  - activity: "Princeton University Graduate Engineering Ambassadors"
-    year: "2005–2009"
-  - activity: "National Science Bowl and National Middle School Science Bowl Moderator"
-    year: "2003–2008"
-  - activity: "National Science Bowl and National Middle School Science Bowl Question Author"
-    year: "2005–2008"
-  - activity: "Princeton University Graduate Engineering Council"
-    year: "2006–2007"
-  - activity: "Princeton University Electrical Engineering Graduate Student Council"
-    year: "2005–2006"
-  - activity: "Colorado School of Mines Board of Trustees Student Trustee"
-    year: "2003–2004"
-  - activity: "Colorado School of Mines Society of Physics Students"
-    year: "2002–2004"
-  - activity: "Colorado School of Mines College Republicans Chairman"
-    year: "2002–2004"
-  - activity: "Colorado School of Mines McBride Honors Program"
-    year: "2000–2004"
-  - activity: "Colorado School of Mines Tau Beta Pi Treasurer"
-    year: "2003–2004"
-  - activity: "Colorado School of Mines Student Body Secretary"
-    year: "2002–2003"
+  - activity: Princeton University IEEE Student Chapter Executive Board
+    year: 2007–2009
+  - activity: Princeton University Graduate Engineering Ambassadors
+    year: 2005–2009
+  - activity: National Science Bowl and National Middle School Science Bowl Moderator
+    year: 2003–2008
+  - activity: National Science Bowl and National Middle School Science Bowl Question Author
+    year: 2005–2008
+  - activity: Princeton University Graduate Engineering Council
+    year: 2006–2007
+  - activity: Princeton University Electrical Engineering Graduate Student Council
+    year: 2005–2006
+  - activity: Colorado School of Mines Board of Trustees Student Trustee
+    year: 2003–2004
+  - activity: Colorado School of Mines Society of Physics Students
+    year: 2002–2004
+  - activity: Colorado School of Mines College Republicans Chairman
+    year: 2002–2004
+  - activity: Colorado School of Mines McBride Honors Program
+    year: 2000–2004
+  - activity: Colorado School of Mines Tau Beta Pi Treasurer
+    year: 2003–2004
+  - activity: Colorado School of Mines Student Body Secretary
+    year: 2002–2003
 
 SoftwareSkills:
-  - area: "Core Language Proficiencies"
+  - area: Core Language Proficiencies
     specifics: [Python, Java, Bash, C]
-  - area: "Substantial Language Experience"
-    specifics: [JavaScript, Go, Scala, R, LaTeX, LabVIEW, MATLAB, Mathematica]
-  - area: "Relational Databases"
+  - area: Configuration Management & Orchestration
+    specifics: [Ansible, Terraform, Kubernetes, Nomad]
+  - area: Packaging & Package Managers
+    specifics: [Conda, Maven, RPM, pip, npm, Helm]
+  - area: Virtualization & Containerization
+    specifics: [Docker, Vagrant, Packer, VitualBox, VMWare]
+  - area: Relational Databases
     specifics: [MySQL, PostgreSQL, SQLite]
-  - area: "Distributed Data Grids & Caching"
+  - area: Distributed Data Grids & Caching
     specifics: [Redis, Memcached, Terracotta, Hazelcast]
-  - area: "NoSQL Databases"
-    specifics: [MongoDB, HBase, Cassandra]
-  - area: "Message & Task Queues"
-    specifics: [RabbitMQ, AWS SQS, Celery]
-  - area: "Application & Web Servers"
+  - area: NoSQL Databases
+    specifics: [MongoDB, Cassandra, Elasticsearch]
+  - area: Message & Task Queues
+    specifics: [Kafka, RabbitMQ, AWS SQS, Celery]
+  - area: Application & Web Servers
     specifics: [nginx, Apache, uWSGI, Tomcat, Jetty, ejabberd]
-  - area: "Cloud Infrastructure"
-    specifics: [Amazon Web Services, Google Cloud Platform, Digital Ocean]
-  - area: "VMs & Containers"
-    specifics: [Docker, Vagrant, Packer, VitualBox, VMWare Fusion]
-  - area: "Linux Distros"
-    specifics: [CentOS, Ubuntu, Debian]
-  - area: "Packaging & Package Managers"
-    specifics: [RPM, pip, conda, Pants, npm, Maven]
-  - area: "Continuous Integration & Automation"
-    specifics: [Ansible, Fabric, Jenkins, TravisCI]
-  - area: "Load Testing Frameworks"
-    specifics: [JMeter, Grinder, Tsung]
-  - area: "TDD & BDD"
-    specifics: [JUnit, pytest, nose]
-  - area: "E2E Testing"
+  - area: Cloud Infrastructure
+    specifics: [Amazon Web Services, Google Cloud Platform, Azure, Digital Ocean]
+  - area: Continuous Integration & Automation
+    specifics: [Jenkins, TravisCI, CircleCI, AppVeyor, Concourse]
+  - area: Load Testing Frameworks
+    specifics: [JMeter, Grinder, Tsung, Locust]
+  - area: TDD
+    specifics: [pytest, JUnit, nose]
+  - area: E2E Testing
     specifics: [Selenium, SauceLabs]
-  - area: "Frameworks"
-    specifics: [Django, AngularJS, jQuery, Foundation, Twitter Bootstrap, Qt, Swing, JavaFX]
-  - area: "Protocols"
-    specifics: [HTTP, XMPP, Thrift]
-  - area: "Microservices"
-  - area: "Design Patterns"
-  - area: "Algorithm Design and Development"
-  - area: "RESTful APIs"
-  - area: "Web and Network Security Best Practices (OWASP Member)"
-  - area: "Agile / Scrum / Jira"
+  - area: Frameworks
+    specifics: [Django, Flask, Qt]
+  - area: Microservices
+  - area: Event-driven Architecture
+  - area: Design Patterns
+  - area: RESTful APIs
+  - area: Web and Network Security Best Practices
+  - area: Agile / Scrum / Jira
 
 HardwareSkills:
-  - area: "Quantum cascade lasers"
-  - area: "Compound semiconductor device fabrication"
-  - area: "Opto-electronic packaging"
-  - area: "Mid-infrared laser sources"
-  - area: "Sensors and sensing applications"
-  - area: "Analytical instrumentation"
+  - area: Quantum cascade lasers
+  - area: Compound semiconductor device fabrication
+  - area: Opto-electronic packaging
+  - area: Mid-infrared laser sources
+  - area: Sensors and sensing applications
+  - area: Analytical instrumentation
 
 NonTechnicalSkills:
-  - area: "Mentoring and teaching"
-  - area: "Analytical writing"
-  - area: "Interpersonal effectiveness"
-  - area: "Public affairs and business foundation"
-  - area: "Conflict resolution"
-  - area: "Diversity of perspective through rural/farming youth"
-  - area: "Political campaigning and public policy"
-  - area: "Research and self-learning"
-  - area: "Strategic and first-principles problem solving"
-  - area: "Acute attention to detail"
-
-
-
-
-
-
-
-
-
-
+  - area: Mentoring and teaching
+  - area: Conflict resolution
+  - area: Acute attention to detail
+  - area: Analytical writing
+  - area: Public affairs and business foundation
+  - area: Political campaigning and public policy
+  - area: Research and self-learning
+  - area: Root cause problem solving
