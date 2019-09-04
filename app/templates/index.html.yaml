@@ -31,7 +31,7 @@ Experience:
     title: Principal Software Engineer
     location: Austin, TX
     details:
-      - Building the next generation of the Anaconda Enterpise data science platform.
+      - Building the next generation of the Anaconda Enterpise data science platform and binary repository.
   - institution: Anaconda, Inc
     year: 2016–2018
     title: Conda Lead Developer
@@ -55,12 +55,21 @@ Experience:
       - Created and deployed local vagrant-based development environments so engineers could write and test code on their local machines. With a legacy eight years' development on a single monolithic app, veteran engineers thought it couldn't be done. Previously, all dev was done on a single, centralized mainframe.
       - Successfully abstracted and decoupled the engineering application stack from the techops infrastructure stack with a "deploy anywhere" philosophy.
   - institution: BioDiscovery, Inc
+    skip_print: true
     year: 2013
     title: Senior Software Engineer
     location: El Segundo, CA
     details:
       - Implemented numerically-efficient versions of several published algorithms for analyzing DNA microarray and Next Generation Sequencing data.
       - Architected and initiated development on a secure and flexible license management system.
+      - Introduced and implemented modern software development practices, including a code and architecture documentation strategy, a transition from Subversion to Git version control, and a peer code review process.
+  - institution: BioDiscovery, Inc
+    skip_web: true
+    year: 2013
+    title: Senior Software Engineer
+    location: El Segundo, CA
+    details:
+      - Implemented numerically-efficient versions of several published algorithms for analyzing DNA microarray and Next Generation Sequencing data.
       - Introduced and implemented modern software development practices, including a code and architecture documentation strategy, a transition from Subversion to Git version control, and a peer code review process.
   - institution: Grindr LLC & Blendr LLC
     year: 2012–2013
@@ -70,7 +79,10 @@ Experience:
       - Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year.
       - Architected scaling and redundancy strategies for multiple proprietary technologies.
       - Authored 78% of server-side code for completely revamped technology platform.
+
+Experience2:
   - institution: NASA Jet Propulsion Laboratory
+    skip_print: true
     year: 2010–2012
     title: Microdevices Engineer
     location: Pasadena, CA
@@ -83,7 +95,20 @@ Experience:
       - Demonstrated world's first high power (>70 mW) room temperature continuous wave 2.05 µm distributed feedback lasers for NASA ASCENDS (Active Sensing of CO₂ Emissions over Nights, Days, and Seasons) deliverable.
       - Developed advanced packaging techniques and procedures for high reliability laser operation.
       - Mentored multiple graduate student interns.
+  - institution: NASA Jet Propulsion Laboratory
+    skip_web: true
+    year: 2010–2012
+    title: Microdevices Engineer
+    location: Pasadena, CA
+    details:
+      - Principal Investigator for JPL award "Low power consumption lasers".
+      - "Developed ErwinJr software package for quantum cascade laser simulation; NTR #48342; released publicly as open source. Written in a combination of Python and C++."
+      - Designed, fabricated, and tested 4.x µm quantum cascade lasers for CO detection.
+      - Demonstrated high power (>100 mW) room temperature continuous wave 2.05 µm single spatial mode lasers for CO₂ lidar.
+      - Developed advanced packaging techniques and procedures for high reliability laser operation.
+      - Mentored multiple graduate student interns.
   - institution: Princeton University
+    skip_print: true
     year: 2009–2010
     title: Postdoc Research Engineer
     location: Princeton, NJ
@@ -104,9 +129,19 @@ Experience:
       - advanced quantum cascade laser design software
       - novel quantum cascade laser designs and strategies
       - mid-infrared spectroscopic sensing systems
-
-Experience2:
   - institution: Princeton University
+    skip_web: true
+    year: 2004–2009
+    title: Research Assistant
+    location: Princeton, NJ
+    details:
+      - Developed infrared lasers for applications in medical diagnostics, explosives sensors, and infrared countermeasures.
+      - Invented new mechanism for achieving lasing in quantum cascade lasers through "high k-space lasing"; U.S.Patent Application 11744508.
+      - Invented "short injector" quantum cascade lasers that led to lowered threshold current and deeper understanding of QC laser physics.
+      - Invented ultra-strong coupling quantum cascade laser designs that led to world record 50% wall-plug efficiencies; U.S. Patent Application 12795954.
+      - Demonstrated world’s first intersubband emission from II-VI quantum cascade structures.
+  - institution: Princeton University
+    skip_print: true
     year: 2004–2009
     title: Research Assistant
     location: Princeton, NJ
@@ -126,6 +161,7 @@ Experience2:
       - Mid-infrared optoelectronic device characterization and analysis for sensing and communication systems
       - Spectroscopic analysis techniques
   - institution: AdTech Optics, Inc.
+    skip_print: true
     year: 2007
     title: Technical Consultant
     location: City of Industry, CA
@@ -215,7 +251,7 @@ Activities:
 
 SoftwareSkills:
   - area: Core Language Proficiencies
-    specifics: [Python, Java, Bash, C]
+    specifics: [Python, Java, Bash, C, Go]
   - area: Configuration Management & Orchestration
     specifics: [Ansible, Terraform, Kubernetes, Nomad]
   - area: Packaging & Package Managers

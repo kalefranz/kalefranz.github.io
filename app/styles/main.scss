@@ -284,10 +284,10 @@ h2 {
 
 
   .for-web {
-    display: block;
+    display: none;
   }
   .for-print {
-    display: none;
+    display: block;
   }
   .pagebreak-before {
     page-break-before: always;

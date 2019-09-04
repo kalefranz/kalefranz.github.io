@@ -100,7 +100,7 @@ gulp.task('extras', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src(['.tmp', 'dist', '.publish'], { read: false }).pipe($.clean());
+    return gulp.src(['.tmp', 'dist', '.publish'], { read: false, allowEmpty: true }).pipe($.clean());
 });
 
 // gulp.task('build', ['html', 'images', 'styles', 'extras']);

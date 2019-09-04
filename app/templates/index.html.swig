@@ -54,6 +54,7 @@
     <h2>Experience</h2>
     <ul class="ul-group">
       {%- for x in Experience.concat(Experience2) %}
+      {%- if not x.skip_web %}
       <li>
         <span class="year">{{ x.year }}</span>
         <span class="institution">{{ x.institution }}</span>
@@ -73,6 +74,7 @@
           {%- endfor %}
         </ul>
       </li>
+      {%- endif %}
       {%- endfor %}
     </ul>
   </section>
@@ -166,6 +168,179 @@
 
 </div> <!-- row -->
 </div> <!-- container -->
+
+
+<div class="container for-print">
+
+<div class="row">  <!-- PAGE #1 -->
+  <div class="col-md-5">
+
+    {% if ImpactStatement %}
+    <div class="profile-panel">
+      {{ ImpactStatement }}
+    </div>
+    {% endif %}
+
+    <section class="education">
+    <h2>Education</h2>
+    <ul class="ul-group">
+      {%- for x in Education %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="institution">{{ x.institution }}</span>
+        <span class="title">{{ x.title }}</span>
+        <ul class="details fa-ul">
+          {%- for detail in x.details %}
+          <li><i class="fa-li fa fa-caret-right"></i>{{ detail }}</li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="software-skills">
+    <h2>Software Skills</h2>
+    <ul class="ul-group spaced">
+      {%- for x in SoftwareSkills %}
+      <li>
+        {%- if x.specifics %}
+          <span class="area decorated">{{ x.area }}: </span>
+          <span class="specifics">{{ x.specifics|join(', ') }}</span>
+        {% else -%}
+          <span class="area">{{ x.area }}</span>
+        {% endif -%}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div>
+  <div class="col-md-7">
+
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul class="ul-group">
+      {%- for x in Experience %}
+      {%- if not x.skip_print %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="institution">{{ x.institution }}</span>
+        <span class="location">{{ x.location }}</span>
+        <span class="title">{{ x.title }}</span>
+        <ul class="details fa-ul">
+          {%- for detail in x.details %}
+            <li><i class="fa-li fa fa-caret-right"></i>{{ detail }}
+              {%- if loop.last and x.subdetails %}
+                <ul class="subdetails">
+                  {%- for subdetail in x.subdetails %}
+                  <li>{{ subdetail }}</li>
+                  {%- endfor %}
+                </ul>
+              {% endif -%}
+            </li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endif %}
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div> <!-- col-md-7 -->
+</div> <!-- row -->
+
+
+<div class="row pagebreak-before">  <!-- PAGE #2 -->
+  <div class="col-md-5">
+
+  <section class="non-technical-skills">
+    <h2>Non-Technical Strengths</h2>
+    <ul class="ul-group spaced">
+      {%- for x in NonTechnicalSkills %}
+      <li>
+        <span class="area">{{ x.area }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="hardware-skills">
+    <h2>Hardware Specialization</h2>
+    <ul class="ul-group spaced">
+      {%- for x in HardwareSkills %}
+      <li>
+        <span class="area">{{ x.area }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="awards">
+    <h2>Awards</h2>
+    <ul class="ul-group spaced">
+      {%- for x in Awards %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="area">{{ x.award }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  {#
+  <section class="activities">
+    <h2>Activities &amp; Volunteer Service</h2>
+    <ul class="ul-group spaced">
+      {%- for x in Activities %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="area">{{ x.activity }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  #}
+
+
+  </div>
+  <div class="col-md-7">
+
+  <section class="experience">
+    <h2>Experience (continued)</h2>
+    <ul class="ul-group experience2">
+      {%- for x in Experience2 %}
+      {%- if not x.skip_print %}
+      <li>
+        <span class="year">{{ x.year }}</span>
+        <span class="institution">{{ x.institution }}</span>
+        <span class="location">{{ x.location }}</span>
+        <span class="title">{{ x.title }}</span>
+        <ul class="details fa-ul">
+          {%- for detail in x.details %}
+            <li><i class="fa-li fa fa-caret-right"></i>{{ detail }}
+              {%- if loop.last and x.subdetails %}
+                <ul class="subdetails">
+                  {%- for subdetail in x.subdetails %}
+                  <li>{{ subdetail }}</li>
+                  {%- endfor %}
+                </ul>
+              {% endif -%}
+            </li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endif %}
+      {%- endfor %}
+    </ul>
+  </section>
+
+  </div> <!-- col-md-7 -->
+</div> <!-- row -->
+
+</div> <!-- container -->
+
+
 
 </body>
 </html>
