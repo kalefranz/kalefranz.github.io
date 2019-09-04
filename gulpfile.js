@@ -151,5 +151,6 @@ gulp.task('build', gulp.series('clean', gulp.series(gulp.parallel('templates', '
 
 gulp.task('deploy', gulp.series('build', function () {
     gulp.src("./dist/**/*")
-        .pipe($.ghPages({branch: 'master'}));
+        .pipe($.ghPages({branch: 'master'}))
+        .pipe($.size());
 }));

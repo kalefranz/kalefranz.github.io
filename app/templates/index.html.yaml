@@ -48,9 +48,10 @@ Experience:
       - With four engineers, transitioned infrastructure from bare metal colo hardware to AWS, within the context of the stringent information security requirements of a regulated industry.
   - institution: 23andMe, Inc
     year: 2013–2015
-    title: Senior Software Engineer, Performance and Security Group
+    title: Senior Software Engineer
     location: Mountain View, CA
     details:
+      - Member of the backend performance and security group.
       - Introduced message queues within the engineering infrastructure, and implemented the first use cases.
       - Created and deployed local vagrant-based development environments so engineers could write and test code on their local machines. With a legacy eight years' development on a single monolithic app, veteran engineers thought it couldn't be done. Previously, all dev was done on a single, centralized mainframe.
       - Successfully abstracted and decoupled the engineering application stack from the techops infrastructure stack with a "deploy anywhere" philosophy.
@@ -76,9 +77,9 @@ Experience:
     title: Core Software Engineer
     location: Hollywood, CA
     details:
-      - Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance capable of handling production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year.
-      - Architected scaling and redundancy strategies for multiple proprietary technologies.
-      - Authored 78% of server-side code for completely revamped technology platform.
+      - Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance for production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year.
+      - Architected scaling and redundancy strategies for multiple technologies.
+      - Authored 78% of server-side code for next-gen technology platform.
 
 Experience2:
   - institution: NASA Jet Propulsion Laboratory
@@ -175,7 +176,7 @@ Experience2:
     title: Research Intern
     location: Golden, CO
     details:
-      - Researched novel approaches to arc-discharge carbon nanotube synthesis.
+      - Researched novel approaches to carbon nanotube synthesis.
       - Constructed an automated prototype nanotube growth system.
       - Synthesized carbon nanotubes through a laser vaporization process.
       - Used Raman spectroscopy, transmission electron microscopy, and thermogravimetric analysis characterization techniques.
