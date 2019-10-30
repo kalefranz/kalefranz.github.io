@@ -6,7 +6,7 @@ Education:
     title: PhD in Electrical Engineering
     location: Princeton, NJ
     details:
-      - Wallace Fellow (top 24 recognition within PhD cohort)
+      - Wallace Fellow (top 24 within PhD cohort)
       - Wu Prize for Excellence
   - institution: Princeton University
     year: 2006
@@ -31,14 +31,19 @@ Experience:
     title: Principal Software Engineer
     location: Austin, TX
     details:
-      - Building the next generation of the Anaconda Enterpise data science platform and binary repository.
+      - Building the next generation of the Anaconda Enterprise data science platform and binary repository.
+      - Responsible for the technical design and architecture of the binary artifact repository, and leading its implementation.
+      - The product scales up to a public cloud service, serving some 18 million users installing a billion packages every month--2.5 petabytes worth.
+      - The product also scales down for enterprise on-prem installations, maintaining a hybrid delivery model.
   - institution: Anaconda, Inc
     year: 2016–2018
-    title: Conda Lead Developer
+    title: Conda Tech Lead
     location: Austin, TX
     details:
-      - Conda is an open source software delivery platform that counts some 16 million users installing more than two petabytes of software every month. It is compatible with all operating systems and all programming language ecosystems. With roots in the data science community, Conda's built-out package support is especially strong for Python and R on Linux, macOS, and Windows. Conda is the package manager that drives the Anaconda data science platform.
-      - As the project lead for more than 2.5 years, I filled the roles of both lead developer and product manager. Interacting with users via the project's GitHub issue tracker, feature development priorities were set collaboratively, integrating over input from a diverse set of stakeholders. Not only did we deliver impactful new features and capabilities, but we also advanced test coverage from 40% to over 90% while stabilizing release cycles to provide reliability for our users.
+      - Filled roles of both lead developer and product manager for the Conda package manager, an open source project with 18 million active users.
+      - Prioritized feature development by integrating over input from a diverse set of stakeholders, including extensive interaction through the project's GitHub issue tracker.
+      - Implemented substantial, impactful new features and capabilities.
+      - Advanced test coverage from 40% to over 90%, while stabilizing release cycles to provide reliability for our users.
   - institution: 23andMe, Inc
     year: 2015
     title: Cloud Infrastructure and Automation Tech Lead
