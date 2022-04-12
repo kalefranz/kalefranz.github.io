@@ -27,23 +27,29 @@ Education:
 
 Experience:
   - institution: Anaconda, Inc
-    year: 2018–present
+    year: 2018–2021
     title: Principal Software Engineer
     location: Austin, TX
     details:
-      - Building the next generation of the Anaconda Enterprise data science platform and binary repository.
-      - Responsible for the technical design and architecture of the binary artifact repository, and leading its implementation.
-      - The product scales up to a public cloud service, serving some 18 million users installing a billion packages every month--2.5 petabytes worth.
-      - The product also scales down for enterprise on-prem installations, maintaining a hybrid delivery model.
+      - Promoted to Principal Engineer to bridge two core but diverged teams within the company (enterprise product and open source).
+      - Director-level equivalent and member of ELT.
+      - Performed as the technical domain expert across the company's spectrum of software build, delivery, installation, and endpoint management products.
+      - Defined architecture and prototyped flagship Anaconda Enterprise binary artifact repository that scales down for on-prem use and scales up for petabyte-scale distributed cloud use.
+      - Game changer design based on event-sourced activity log that records repository state throughout time, allowing companies in highly regulated industries to perfectly and trivially replicate deployed software state at any point in history.
+      - Created tools and established processes for active CVE security updates to end users. A primary differentiator for a key value-add upsell.
+      - Advocated for, recruited, and then advised senior security engineer to integrate package signing across product offerings.
+      - Six month stint embedded in the product management team interfacing with product marketing, sales and business development, solutions architects, and support engineers along with on-site visits to strategic enterprise account holders.
   - institution: Anaconda, Inc
     year: 2016–2018
     title: Conda Tech Lead
     location: Austin, TX
     details:
-      - Filled roles of both lead developer and product manager for the Conda package manager, an open source project with 18 million active users.
-      - Prioritized feature development by integrating over input from a diverse set of stakeholders, including extensive interaction through the project's GitHub issue tracker.
-      - Implemented substantial, impactful new features and capabilities.
-      - Advanced test coverage from 40% to over 90%, while stabilizing release cycles to provide reliability for our users.
+      - Straddled dual roles of lead developer and product manager for a user community of over 18 million.
+      - Direct interaction with at-large community. Resolved and closed thousands of issues and pull requests from the project's open GitHub repository.
+      - Implemented substantial and impactful new features and capabilities.
+      - Stabilized release cycles to provide reliability for users.
+      - Advanced test coverage from 40% to well over 90%.
+      - Mentored multiple interns for summer and semester-long internships.
   - institution: 23andMe, Inc
     year: 2015
     title: Cloud Infrastructure and Automation Tech Lead
