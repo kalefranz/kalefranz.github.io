@@ -75,6 +75,8 @@ Experience:
       - Implemented numerically-efficient versions of several published algorithms for analyzing DNA microarray and Next Generation Sequencing data.
       - Architected and initiated development on a secure and flexible license management system.
       - Introduced and implemented modern software development practices, including a code and architecture documentation strategy, a transition from Subversion to Git version control, and a peer code review process.
+
+Experience2:
   - institution: BioDiscovery, Inc
     skip_web: true
     year: 2013
@@ -91,8 +93,6 @@ Experience:
       - Developed proprietary location algorithm at the heart of the company’s location-based technology offering. The algorithm eliminated the use of 3000 Google App Engine instances, which were replaced with a single AWS EC2 m1.large instance for production-scale traffic. The new algorithm resulted in a savings to the company of $1.4 million per year.
       - Architected scaling and redundancy strategies for multiple technologies.
       - Authored 78% of server-side code for next-gen technology platform.
-
-Experience2:
   - institution: NASA Jet Propulsion Laboratory
     skip_print: true
     year: 2010–2012
@@ -130,6 +130,7 @@ Experience2:
       - Designed and built opto-electronic systems from off-the-shelf and research-grade components.
       - Authored detection and analysis algorithms in MATLAB.
   - institution: Primis Technologies LLC
+    skip_print: true
     year: 2006–2009
     title: Founding Partner & Senior Engineer
     location: Princeton, NJ
@@ -195,6 +196,12 @@ Experience2:
     year: 2002
     title: Legislative Intern
     location: Denver, CO
+    skip_web: true
+  - institution: Colorado State House of Representatives
+    year: 2002
+    title: Legislative Intern
+    location: Denver, CO
+    skip_print: true
     details:
       - Aid to Representative Brad Young, Chairman of the Joint Budget Committee
       - Drafted responses to constituent mail
@@ -203,6 +210,12 @@ Experience2:
     year: 2001–2002
     title: Intern
     location: Washington, D.C.
+    skip_web: true
+  - institution: U.S. Department of Energy, Office of Science
+    year: 2001–2002
+    title: Intern
+    location: Washington, D.C.
+    skip_print: true
     details:
       - Traveled to DOE National Labs assisting University of Washington Center for Workforce Development in internship program review and evaluation, examining program value and customer (intern) satisfaction.
       - Advised on strategic direction for individual programs and department mission.
